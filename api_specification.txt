@@ -1,0 +1,74 @@
+vistas (servicios).
+
+------------------
+POST create_game
+
+data: {
+    player1_name: string,
+    player2_name: string
+}
+
+response: {
+    game_id: number
+}
+
+------------------
+GET get_score
+
+parameters.
+    game_id: number
+
+response: {
+    game_id: number,
+    player1_score: number,
+    player2_score: number,
+    winner: string,
+    game_rounds: [
+        {            
+            round_no: number,
+            round_winner: string
+        },
+        ....
+    ]
+}
+
+------------------
+POST register_round
+
+data: {
+    game_id: number,
+    player1_move: string,
+    player2_move: string
+}
+
+response: {
+    success: Boolean
+    winner: string
+    }
+
+--------------------
+GET get_game_history
+
+response: [
+    {
+        game_id: number,
+        player1_name: string,
+        player2_name: string,
+        winner: string
+    },
+    ....
+]
+
+--------------------
+GET get_ranking
+
+response: [
+    {
+        position: number,
+        player_name: string,
+        games_played: number,
+        games_won: number,
+        games_lost: number
+    }
+    ....
+]
