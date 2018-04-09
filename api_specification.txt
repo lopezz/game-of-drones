@@ -4,8 +4,8 @@ vistas (servicios).
 POST create_game
 
 data: {
-    player1_name: string,
-    player2_name: string
+    player1: string,
+    player2: string
 }
 
 response: {
