@@ -12,7 +12,7 @@ A rock-paper-scissors game written in Django and ReactJS
 * In order to run your own build, first ensure you have python3 globally installed in your computer. If not, you can get python [here](https://www.python.org).
 * After doing this, confirm that you have installed virtualenv globally as well. If not, run this:
     ```bash
-        $ python3 -m pip install virtualenv
+        $ python -m pip install virtualenv
     ```
 * Then, Git clone this repo to your PC
     ```bash
@@ -26,8 +26,12 @@ A rock-paper-scissors game written in Django and ReactJS
         ```
     2. Create and activate your virtual enviroment:
         ```bash
-            $ python3 -m venv venv
+            $ python -m venv venv
             $ source venv/bin/activate
+        ```
+        If you are on Windows, you can achieve this using.
+        ```bash            
+            $ venv\Scripts\activate
         ```
     3. Install the dependencies needed to run the app:
         ```bash
