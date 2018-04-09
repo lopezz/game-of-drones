@@ -9,7 +9,7 @@ A rock-paper-scissors game written in Django and ReactJS
 * Python 3.5+
 
 ## Installation
-* In order to run your own build, first ensure you have python3 globally installed in your computer. If not, you can get python [here](https://www.python.org").
+* In order to run your own build, first ensure you have python3 globally installed in your computer. If not, you can get python [here](https://www.python.org).
 * After doing this, confirm that you have installed virtualenv globally as well. If not, run this:
     ```bash
         $ python3 -m pip install virtualenv
